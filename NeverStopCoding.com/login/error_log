@@ -1,0 +1,42 @@
+[28-Jun-2017 15:25:19 America/Chicago] PHP Warning:  include(Includes//footer.php): failed to open stream: No such file or directory in /home4/delacrank/public_html/login/functions.php on line 165
+[28-Jun-2017 15:25:19 America/Chicago] PHP Warning:  include(Includes//footer.php): failed to open stream: No such file or directory in /home4/delacrank/public_html/login/functions.php on line 165
+[28-Jun-2017 15:25:19 America/Chicago] PHP Warning:  include(): Failed opening 'Includes//footer.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home4/delacrank/public_html/login/functions.php on line 165
+[30-Jun-2017 15:27:15 America/Chicago] PHP Warning:  include(Includes//footer.php): failed to open stream: No such file or directory in /home4/delacrank/public_html/login/functions.php on line 165
+[30-Jun-2017 15:27:15 America/Chicago] PHP Warning:  include(Includes//footer.php): failed to open stream: No such file or directory in /home4/delacrank/public_html/login/functions.php on line 165
+[30-Jun-2017 15:27:15 America/Chicago] PHP Warning:  include(): Failed opening 'Includes//footer.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home4/delacrank/public_html/login/functions.php on line 165
+[30-Jul-2017 15:20:55 America/Chicago] PHP Warning:  include(Includes//footer.php): failed to open stream: No such file or directory in /home4/delacrank/public_html/login/functions.php on line 165
+[30-Jul-2017 15:20:55 America/Chicago] PHP Warning:  include(Includes//footer.php): failed to open stream: No such file or directory in /home4/delacrank/public_html/login/functions.php on line 165
+[30-Jul-2017 15:20:55 America/Chicago] PHP Warning:  include(): Failed opening 'Includes//footer.php' for inclusion (include_path='.:/opt/php54/lib/php') in /home4/delacrank/public_html/login/functions.php on line 165
+[18-Oct-2017 02:34:43 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ereg() in /home/delacrank/public_html/login/functions.php:16
+Stack trace:
+#0 /home/delacrank/public_html/login/register.php(48): valid_email('j@j.com')
+#1 {main}
+  thrown in /home/delacrank/public_html/login/functions.php on line 16
+[18-Oct-2017 02:45:27 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ereg() in /home/delacrank/public_html/login/functions.php:16
+Stack trace:
+#0 /home/delacrank/public_html/login/register.php(48): valid_email('j@j.com')
+#1 {main}
+  thrown in /home/delacrank/public_html/login/functions.php on line 16
+[18-Oct-2017 05:03:41 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ereg() in /home/delacrank/public_html/login/functions.php:16
+Stack trace:
+#0 /home/delacrank/public_html/login/register.php(48): valid_email('j@j.com')
+#1 {main}
+  thrown in /home/delacrank/public_html/login/functions.php on line 16
+[18-Oct-2017 05:54:58 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ereg() in /home/delacrank/public_html/login/functions.php:16
+Stack trace:
+#0 /home/delacrank/public_html/login/register.php(48): valid_email('j@j.com')
+#1 {main}
+  thrown in /home/delacrank/public_html/login/functions.php on line 16
+[18-Oct-2017 05:55:07 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ereg() in /home/delacrank/public_html/login/functions.php:16
+Stack trace:
+#0 /home/delacrank/public_html/login/register.php(48): valid_email('j@j.com')
+#1 {main}
+  thrown in /home/delacrank/public_html/login/functions.php on line 16
+[18-Oct-2017 05:56:03 UTC] PHP Fatal error:  Uncaught Error: Call to undefined function ereg() in /home/delacrank/public_html/login/functions.php:16
+Stack trace:
+#0 /home/delacrank/public_html/login/register.php(48): valid_email('j@j.com')
+#1 {main}
+  thrown in /home/delacrank/public_html/login/functions.php on line 16
+[18-Oct-2017 06:00:22 UTC] PHP Warning:  preg_match(): No ending delimiter '^' found in /home/delacrank/public_html/login/functions.php on line 16
+[27-Oct-2017 03:34:29 UTC] PHP Warning:  include(Includes//footer.php): failed to open stream: No such file or directory in /home/delacrank/public_html/login/functions.php on line 150
+[27-Oct-2017 03:34:29 UTC] PHP Warning:  include(): Failed opening 'Includes//footer.php' for inclusion (include_path='.:/opt/alt/php71/usr/share/pear') in /home/delacrank/public_html/login/functions.php on line 150

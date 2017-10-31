@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;
+	charset=utf-8" />
+<title>Controllers - Angular Js Programming</title>
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel="stylesheet"><link href='http://fonts.googleapis.com/css?family=Cormorant+Infant' rel="stylesheet"><link rel="stylesheet"
+      type="text/css"
+      href="../testcss.css">
+    
+<script src="../angular.min.js"></script>    
+    
+</head>
+<body>
+    
+ <!-- Header -->
+<?php include('..//Includes//header.php'); ?>
+
+<!-- Navigation2 -->
+<?php include('..//Includes//nav.php'); ?>
+    
+<!-- Navigation2 -->
+<?php include('..//Includes//nav2.php'); ?>
+
+<!-- Left --><div class = "mainWrapper">
+<?php include('..//Includes//Left_AngularJs.php'); ?>
+    
+<!-- Right --> 
+<div id ="rightz">
+
+<h1>Controllers - Angular Js Development</h1>
+    
+<!-- Controllers -->    
+<h2>Controllers</h2>   
+    
+<p>Similar to the Controller in an MVC pattern, a controller in Angular Js will manage the application layer of the program.  Let's look at a sample controller to understand how it works.</p>
+    
+<em>Code:</em>    
+<!-- Code -->
+<pre class="code">
+&lt;div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: &lt;input type="text" ng-model="firstName">
+Last Name: &lt;input type="text" ng-model="lastName">
+
+Full Name: {{firstName + " " + lastName}}
+
+&lt;/div>
+
+&lt;script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName= "";
+    $scope.lastName= "";
+});
+&lt;/script></pre>
+    
+<p>Let's understand what is going on here.  The first thing you should notice is that we added a controller attribute to our div block element.  Following this we gave our user to models in which to submit data.  The first model is called 'firstName' and the second model is 'lastName'.
+    
+<span class= "nl">Following this we used an expression to fill in a full name, similar to other languages we were able to concatect these two strings using the plus sign.</span>
+    
+<span class= "nl">Now let's look see how we were able to define our application by intializing a variable named app equal to angular.module('myApp', []);</span>
+
+<span class= "nl">Let's move to our controller which we use to define the scope of our application. We define the first</span></p>    
+    
+<!-- Example -->
+<em>Example:</em><br /><br />
+
+<div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: <input type="text" ng-model="firstName"><br>
+Last Name: <input type="text" ng-model="lastName"><br>
+<br>
+Full Name: {{firstName + " " + lastName}}
+
+</div>
+
+<script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName= "";
+    $scope.lastName= "";
+});
+</script>
+<br />
+<hr />    
+    
+<!-- Controller Methods -->
+<h3>Controller Methods</h3>
+    
+    <p></p>
+    
+<em>Code:</em>    
+<!-- Code -->
+<pre class="code"> 
+&lt;div ng-app="myApp" ng-controller="myCtrl">
+
+First Name: &lt;input type="text" ng-model="firstName">
+Last Name: &lt;input type="text" ng-model="lastName">
+
+Full Name: {{fullName}}
+
+&lt;/div>
+
+&lt;script>
+var app = angular.module('myApp', []);
+app.controller('myCtrl', function($scope) {
+    $scope.firstName= "";
+    $scope.lastName= ""; 
+    $scope.fullName = function() {
+        return $scope.firstName + " " + $scope.lastName;
+    }
+});
+&lt;/script></pre>
+
+    
+<br />
+<hr />
+    
+<a href="AngularJs.html">Previous Page</a>
+<br /><br />
+</div>
+
+</div><!-- Footer -->
+<?php include('..//Includes//footer.php'); ?>
+    
+</body>
+</html>

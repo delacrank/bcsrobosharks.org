@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html;
+	charset=utf-8" />
+        <meta name="description" content="Learn program with Google's Angular JS javascript framework, for fast and neat responses to client side issues." />
+        <meta name="keywords" content="Angular Js, Client side, javascript framework, javascript" />
+        <meta name= "author" content="Juan Arias" />
+<title>Introduction to Angular Js Framework</title>
+<link href='http://fonts.googleapis.com/css?family=Varela+Round' rel="stylesheet"><link href='http://fonts.googleapis.com/css?family=Cormorant+Infant' rel="stylesheet"><link rel="stylesheet"
+      type="text/css"
+      href="../testcss.css">
+    
+<script src="../angular.min.js"></script>    
+    
+</head>
+<body>
+    
+ <!-- Header -->
+<?php include('..//Includes//header.php'); ?>
+
+<!-- Navigation2 -->
+<?php include('..//Includes//nav.php'); ?>
+    
+<!-- Navigation2 -->
+<?php include('..//Includes//nav2.php'); ?>
+
+<!-- Left --><div class = "mainWrapper">
+<?php include('..//Includes//Left_AngularJs.php'); ?>
+    
+<!-- Right --> 
+<div id ="rightz">
+
+<h1>Introduction to Angular Js Framework</h1>
+    
+    <p>Welcome to my Angular Javascript section.  In this section we are going to talk about how to incorporate Angular Js into your HTML pages.  In order to use Angular Js, you should be familar with HTML and Javascript.</p>
+    
+<h2>The Basics</h2>
+
+    <p>There are several things you should add before working with Angular Js in any type of html file.  For one, you should add 'ng-app' to your html opening tag like so: '&lt;html ng-app>' and you should also add the script in your head tag:
+        
+    <span class = "nl">'&lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js">&lt;/script>'.</span>
+        
+    <span class = "nl">You can also download the file from 'https://angularjs.org/' and then load the file on to your html similar to the way we added our jQuery file in the head tags.</span>
+    
+    <span class = "nl">&lt;script src="../angular.min.js">&lt;/script></span>         
+        
+    <span class = "nl">Let's look at an example of storing data using angular JS.</span></p>
+    
+<em>Code:</em>    
+<!-- Code -->    
+<pre class="code">
+&lt;!doctype html><br /> 
+&lt;html <span class="highlight">ng-app</span>>
+    &lt;head>
+        &lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.1/angular.min.js">
+        &lt;/script>
+    &lt;/head>
+        &lt;body>  
+            &lt;div>  
+                &lt;label>Name:&lt;/label>
+                &lt;input type="text" <span class="highlight">ng-model="yourName"</span> placeholder="Enter a name here">
+                &lt;br />
+                &lt;label>Hello <span class="highlight">&#123;&#123;yourName&#125;&#125;</span>&lt;/label>
+            &lt;/div>
+        &lt;/body>
+&lt;/html></pre>    
+<br />
+    
+<!-- Example -->    
+<em>Example:</em><br /><br />
+<div ng-app="">
+<label>Name:</label>    <input type="text" ng-model="yourName2" placeholder="Enter a name here"><br />
+    
+<label>Hello: <label ng-bind="yourName2"></label></label>
+</div>
+<br />
+<hr />
+
+<!-- Applying Angular js -->
+<h3>Applying Angular Js to elements</h3>
+    
+<p>Let's say for example that we don't want to add Angular JS to our entire html file, we could add our 'ng-app' to a div element and then only items inside that element would be affected by it.  Remeber, we still need to add our angular js script to the head tag reguardless of where we place our 'ng-app'.</p>
+    
+<em>Code:</em>
+<!-- Code: -->
+<pre class="code">
+&lt;div <span class="highlight">ng-app=""</span>>
+    &lt;input type="text" <span class="highlight">ng-model="yourName"</span> placeholder="Enter a name here">
+    &lt;label>Your name: {{yourName}}&lt;label>
+&lt;/div></pre>
+<br />
+<hr />
+    
+<!-- Data binding -->    
+<h3>Data Binding</h3>
+    
+    <p>We can also use data binding to bind our data to html elements, let's try an example using the 'p' element.</p>
+    
+<em>Code:</em>
+<!-- Code -->
+<pre class="code">
+    &lt;div <span class="highlight">ng-app=""</span>>
+        &lt;p>Name: &lt;input type="text" <span class="highlight">ng-model="name"></span>&lt;/p>
+    &lt;p <span class="highlight">ng-bind="name"></span>&lt;/p>
+&lt;/div></pre>   
+    
+<br />
+<hr />
+    
+<a href="AngularJs1.html"> Next page</a>
+<br /><br />
+</div>
+
+</div><!-- Footer -->
+<?php include('..//Includes//footer.php'); ?>
+    
+</body>
+</html>
