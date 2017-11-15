@@ -1,0 +1,84 @@
+/* Tablets */
+@media (min-width: 481px) and (max-width:768px) {    
+    body {
+        min-width: 481px;
+    }
+    
+    .navigation ul li {
+        display: none;
+    }
+    
+    .navigation ul li:first-child {
+        display: block;
+    }
+    
+    .navigation ul li:last-child {
+        position: fixed;
+        right: 5px;
+        display: block;
+    }
+    
+    footer .col_one, footer .col_two, footer .col_three {
+        width: 100%;
+        margin-left: 14%;
+        float: none;
+    }
+    
+    footer .col_one li, footer .col_two li, footer .col_three li{
+        margin-top: 5px;
+    }
+    
+    footer .col_three:last-child {
+        margin-bottom: 20px;
+    }
+    
+    .contribution img {
+        float: none;
+        width: 100%;
+        padding-left: 10px;
+        margin-left: 0;
+    }
+    
+    .contribution p {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 0;
+    }
+    
+    .donate_form fieldset {
+        margin-left: 0%;
+    }
+    
+    .donate img {
+        margin-left: -30px;
+    }
+    
+    .Contact img {
+        margin-left: 10px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+    
+    .Contact img +  p {
+        margin-left: 10px;
+    }
+    
+    .contact_form p {
+        width: 100px;
+    }
+    
+    .contact_form input[type="text"] {
+        margin-left: 40px;
+        margin-bottom: 10px;
+    }
+    
+    .contact_form textarea {
+        width: 307px;
+        margin-left: 40px;
+    }
+    
+    .contact_form input[type="submit"] {
+        margin-left: 307px;
+    }
+}

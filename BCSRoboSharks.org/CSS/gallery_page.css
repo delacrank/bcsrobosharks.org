@@ -1,0 +1,137 @@
+/* Gallery */
+.gallery_overlay {
+    background: rgba(64,9,30, .6);
+    padding-bottom: 50px;
+}
+
+.gallery_intro {
+    background-image: url(../Images/IMG_87875-1024x765.jpg);
+    background-size: cover;
+    background-position: top center;
+}
+
+    .gallery_intro h1 {
+        clear: left;
+        font-family: 'Alegreya';
+        color: #ccffff;
+        font-size: 40px;
+        text-align: center;
+        padding-top: 100px;
+        padding-bottom: 170px;
+        margin-bottom: 15px;
+        text-shadow: 2px 2px #ffb0b2;
+    }
+
+    .gallery_intro h1 ~ p {
+        width: 80%;
+        margin-left: 10%;
+        font-family: 'Alegreya';
+        color: #ccffff;
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .gallery_intro ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .gallery_intro ul li {
+        margin-left: 3px;
+        margin-right: 7px;
+        margin-top: 40px;
+        color: #7A2805;
+        font-size: 20px;
+        border: 2px solid grey;
+        padding: 10px;
+        border-radius: 15px;
+        background: #F2F0C7
+    }
+
+    .gallery_intro ul li:hover {
+        position: relative;
+        top: 4px;
+    }
+
+.gallery h1 {
+    font-family: 'Alegreya';
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 3%;
+    padding-top: 3%;
+}
+
+    .gallery ul {
+        margin-left: 10%;
+        margin-bottom: 5%;
+        width: 80%;
+        line-height: 0;
+        column-count: 4;
+        column-gap: 0px; 
+    }
+
+    .gallery ul li:hover {
+        position: relative;
+        bottom: 7px;
+    } 
+
+    .gallery li {
+        margin-left: 3%;
+        margin-right: 3%;
+        margin-bottom: 5%;
+        margin-top: 5%;
+        box-shadow: rgba(0,0,0,.2) 3px 5px 5px;
+    }
+
+    .gallery li:first-child {
+        margin-top: 0;    
+    }
+
+    .gallery li img {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    .all {
+        display: none;
+    }
+
+    .rush {
+        display: none;
+    }
+
+    .ascent {
+        display: none;
+    }
+    
+    .aerial {
+        display: none;
+    }
+
+    
+@media (max-width: 1200px) {
+    .gallery ul {
+        column-count: 4;
+    }
+}
+    
+@media (max-width: 1000px) {
+    .gallery ul {
+        column-count: 3;
+    }
+}
+    
+@media (max-width: 800px) {
+    .gallery ul {
+        column-count: 2;
+    }
+}
+    
+@media (max-width: 520px) {
+    .gallery ul {
+        column-count: 1;
+    }
+}
