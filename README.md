@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# NeverStopCoding.com
-A website I wrote which contains tutorials on programming
 =======
 # bcsrobosharks.org
-website for school
->>>>>>> origin/master
+A website I designed for a school in Brooklyn
